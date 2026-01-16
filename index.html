@@ -3,122 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Raghav Raj | Full Stack Developer</title>
+  <title>Raghav Raj | Full Stack Systems Engineer</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a2e0c2eb9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>Raghav Raj</h1>
-      <p class="subtitle">Full Stack Developer</p>
-      <div class="social-links">
-        <a href="https://github.com/raghavraj288" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/raghav-jha-667722244/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:raghavraj288@gmail.com"><i class="fas fa-envelope"></i></a>
+  <nav class="glass-nav">
+    <div class="nav-content">
+      <div class="brand">RAGHAV<span>_</span>RAJ</div>
+      <div class="nav-links">
+        <a href="#about">Profile</a>
+        <a href="#experience">Career</a>
+        <a href="#skills">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="mailto:raghavraj288@gmail.com" class="cta-nav">Connect</a>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="status-pill"><span class="dot"></span> Software Developer @ Om Logistics</div>
+          <h1>Architecting <span class="gradient-text">Scalable</span> Digital Systems.</h1>
+          <p class="hero-lead">Polyglot Engineer specialized in <strong>JavaScript, Python, and Golang</strong>. I build high-concurrency backends and performance-optimized frontends for enterprise-scale applications.</p>
+          <div class="hero-actions">
+            <a href="https://github.com/raghavraj288" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/raghav-jha-667722244/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:raghavraj288@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I’m a passionate Full Stack Developer who loves building scalable systems and clean UI. I enjoy solving real-world problems and constantly learning new tools, frameworks, and technologies to build fast and reliable web applications.</p>
-  </section>
-
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div>
-        <h3>FRONT-END</h3>
-        <p>HTML/CSS, JavaScript, TypeScript, Next.js, React.js, Tailwind CSS</p>
-      </div>
-      <div>
-        <h3>BACK-END</h3>
-        <p>Node.js, Express.js, Socket, Redis, RabbitMQ, Microservices, System Architecture Design, Nest.js</p>
-      </div>
-      <div>
-        <h3>DEVOPS</h3>
-        <p>Docker, Kubernetes, cPanel, AWS (EC2, S3, SNS), Linux, YAML</p>
-      </div>
-      <div>
-        <h3>AI (APIs)</h3>
-        <p>OpenAI API, Whisper API</p>
-      </div>
-      <div>
-        <h3>VERSION CONTROL</h3>
-        <p>Git, GitHub, GitLab</p>
-      </div>
-      <div>
-        <h3>DATABASE</h3>
-        <p>MySQL, MongoDB, PostgreSQL, Mongoose, TypeORM, Sequelize</p>
-      </div>
-      <div>
-        <h3>TOOLS</h3>
-        <p>VS Code, Vim, Nano</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-      <h3>Distributed multi notification system</h3>
-      <p>An event driven distributed notification using redis pubsub model and bullMQ for retrying mechanism.</p></br>
-      <p>App1 → Publishes notifications (HTTP API).</p></br>
-      <p>App2 → Subscribes & sends notifications via Email, SMS, WhatsApp.</p></br>
-      <p>Redis → Used for Pub/Sub & Bull queues with retry mechanism.</p></br>
+  <main class="container">
     
-      <a href="https://github.com/raghavraj288/notification-system-redis.git" target="_blank">GitHub Repo</a>
+    <section id="about" class="grid-section">
+  <div class="section-tag">01. Profile</div>
+  <div class="content-box">
+    <h2 class="concise-heading">Software Engineer specializing in High-Performance Systems.</h2>
+    
+    <p class="para compact">
+      <strong>Raghav Raj</strong> — 2+ years of experience architecting resilient, distributed systems. 
+      Expertise in bridging backend efficiency with scalable UI across diverse high-stakes industries:
+    </p>
+
+    <div class="industry-chips">
+      <span class="chip"><strong>Logistics & SCM</strong> (B2B/B2C)</span>
+      <span class="chip"><strong>HealthTech</strong> (Product-Based)</span>
+      <span class="chip"><strong>FinTech</strong> (Service-Based)</span>
+      <span class="chip"><strong>AdTech</strong> (Influencer Marketing)</span>
     </div>
 
-    <div class="project-card">
-      <h3>Transport Management system</h3>
-      <p>Developed a transport management system with graphql , express , mongo and frontend is written in react , it also has Role based authorization using stateless jwts .</p>
-      <a href="https://thriving-melba-7fc957.netlify.app/" target="_blank">Live Project</a>
-      <a href="https://github.com/raghavraj288/tms-backend" target="_blank">GitHub Repo</a>
+    <p class="para compact">
+      Core focus on <strong>Node.js, Golang, and Python</strong>. I thrive in environments where 
+      system performance, security and architectural scalability are mission-critical.
+    </p>
+  </div>
+</section>
+
+    <section id="experience" class="grid-section">
+      <div class="section-tag">02. Career History</div>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="time-header">
+            <h3>Software Developer</h3>
+            <span class="company">Om Logistics (Logistics & SCM)</span>
+            <span class="date">Present</span>
+          </div>
+          <div class="time-body">
+            <p>Directing technical updates and system architecture for enterprise B2B and B2C logistics platforms. Focusing on streamlining supply chain tracking and optimizing internal dashboard performance.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-header">
+            <h3>Full Stack Developer</h3>
+            <span class="company">Fitelo (Healthcare & Wellness)</span>
+            <span class="date">Nov 2023 – Feb 2025</span>
+          </div>
+          <div class="time-body">
+            <ul>
+              <li><strong>Architecture Modernization:</strong> Revamped system architecture into high-performance microservices using <strong>Nest.js</strong> and <strong>TypeORM</strong>.</li>
+              <li><strong>Real-time Systems:</strong> Engineered a live sales dashboard and modules for healthcare provider data management and subscription lifecycle optimization.</li>
+              <li><strong>Workflow Automation:</strong> Seamlessly integrated LSQ with custom-built APIs to automate critical sales and wellness tracking operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-header">
+            <h3>Software Engineer Intern</h3>
+            <span class="company">PvHub (FinTech Services)</span>
+            <span class="date">July 2023 – Oct 2023</span>
+          </div>
+          <div class="time-body">
+            <ul>
+              <li>Contributed to a Transport Management System (TMS) utilizing <strong>Express, Sequelize, and Next.js</strong>.</li>
+              <li>Mastered and implemented complex protocols including <strong>OAuth 2.0</strong> and automated transaction alerts via Nodemailer.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time-header">
+            <h3>FullStack Developer Intern</h3>
+            <span class="company">Famstar (AdTech / Digital Marketing)</span>
+            <span class="date">July 2022 – June 2023</span>
+          </div>
+          <div class="time-body">
+            <ul>
+              <li><strong>AdTech Infrastructure:</strong> Engineered APIs to facilitate seamless connections between influencers and brands for targeted digital marketing campaigns.</li>
+              <li><strong>Feature Development:</strong> Developed platform-wide features including payment gateway integrations and custom settings modules.</li>
+              <li><strong>UI Engineering:</strong> Designed high-fidelity components using <strong>Next.js and Tailwind CSS</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="grid-section">
+      <div class="section-tag">03. Expertise</div>
+      <div class="skills-grid">
+        <div class="skill-pill"><h4>Languages</h4><p>JavaScript (ES6+), TypeScript, Python, Golang</p></div>
+        <div class="skill-pill"><h4>Frameworks</h4><p>Next.js, React, Node.js, Nest.js, Express</p></div>
+        <div class="skill-pill"><h4>Systems</h4><p>Microservices, Redis, RabbitMQ, WebSockets, WebRTC</p></div>
+        <div class="skill-pill"><h4>Cloud & DevOps</h4><p>AWS (EC2, S3), Docker, Kubernetes, Nginx, CI/CD</p></div>
+        <div class="skill-pill"><h4>Database</h4><p>PostgreSQL, MongoDB, MySQL, Redis, TypeORM, Sequelize, Mongoose</p></div>
+        <div class="skill-pill"><h4>AI & Tools</h4><p>OpenAI API, Whisper, Git, Linux (Vim/Nano)</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="grid-section">
+      <div class="section-tag">04. Engineering Work</div>
+      <div class="project-grid">
+        
+        <div class="project-card">
+          <h3>Distributed Notification Engine</h3>
+          <p>An event-driven notification infrastructure using Redis Pub/Sub and BullMQ. Optimized for message reliability across Email, SMS, and WhatsApp platforms.</p>
+          <div class="p-links">
+            <a href="https://github.com/raghavraj288/notification-system-redis.git" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Stateless TMS Infrastructure</h3>
+          <p>Architected a logistics management backend utilizing GraphQL and stateless JWT authentication for secure, multi-role enterprise resource access.</p>
+          <div class="p-links">
+            <a href="https://thriving-melba-7fc957.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/raghavraj288/tms-backend" target="_blank"><i class="fab fa-github"></i> Repository</a>
+          </div>
+        </div>
+
+        <div class="project-card highlight">
+          <h3>Social Auth & Verified Infrastructure</h3>
+          <p>High-security backend for social platforms featuring Aadhar-based identity verification, automated OTP implementation, and real-time WebSocket chat architecture.</p>
+          <div class="p-links">
+            <a href="https://drive.google.com/drive/u/0/folders/1po8uvulg4-bbDy2qEH5c4nMCGPcwObmc" target="_blank"><i class="fas fa-folder-open"></i> Project Files</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Ecommerce Admin Panel (WooCommerce)</h3>
+          <p>Developed a dashboard to manage WooCommerce products (Add, Edit, Remove, View) with integration via OAuth 1.0. Tech stack includes React, Express, PostgreSQL, and JWT for secure access.</p>
+          <div class="p-links">
+            <!-- <a href="https://thriving-melba-7fc957.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+            <a href="https://github.com/raghavraj288/deploy_task" target="_blank"><i class="fab fa-github"></i> Repository</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Raghav Raj. | Polyglot Software Engineer</p>
     </div>
-
-
-    <div class="project-card">
-      <h3>Dating App (Freelance - Ongoing)</h3>
-      <p>A full-fledged backend system with architecture design, database modeling, and service integration including Authentication, Authorization, Notifications, and Real-Time Chat. Hosting done with AWS, Docker, and SSL setup.</p>
-      <p><strong>Status:</strong> Aadhar verification and OTP implementation in progress (April 2025)</p>
-      <a href="https://drive.google.com/drive/u/0/folders/1po8uvulg4-bbDy2qEH5c4nMCGPcwObmc" target="_blank">Drive Link</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Postwomen</h3>
-      <p>Designed a modern UI using React.js with Express.js backend for testing HTTP methods. Managed app state via Redux and implemented a robust proxy server with clean error handling for smooth request/response management.</p>
-      <a href="https://github.com/raghavraj288/Postwomen" target="_blank">GitHub Repo</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Performance Monitor</h3>
-      <p>Built a real-time performance monitoring tool using React, Express, WebSockets, and Node. Ensured seamless real-time data flow from devices to UI with efficient backend processing and a responsive frontend interface.</p>
-      <a href="https://performance-moniter-react-client.onrender.com/" target="_blank">Live Demo</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Ecommerce Admin Panel (WooCommerce)</h3>
-      <p>Developed a dashboard to manage WooCommerce products (Add, Edit, Remove, View) with integration via OAuth 1.0. Tech stack includes React, Express, PostgreSQL, and JWT for secure access.</p>
-      <a href="https://github.com/raghavraj288/deploy_task" target="_blank">GitHub Repo</a>
-    </div>
-
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Raghav Raj. All rights reserved.</p>
   </footer>
 
 </body>
